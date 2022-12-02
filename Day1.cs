@@ -1,14 +1,13 @@
-using NUnit.Framework;
+using AdventOfCode.Infrastructure;
 
 namespace AdventOfCode;
 
 /// <summary>
 /// https://adventofcode.com/2022/day/1
 /// </summary>
-public class Day1Test
+public class Day1: IDay
 {
-    [Test]
-    public void Day1()
+    public void Run()
     {
         var inputFileDay1 = File.ReadAllLines("Input/day1.txt");
 
@@ -39,7 +38,8 @@ public class Day1Test
                 .OrderByDescending(caloriesPerElf => caloriesPerElf)
                 .Take(3)
                 .Sum();
-
-        Assert.Pass();
+        
+        Console.WriteLine($"{nameof(Day1)} - Answer 1 = {maxCalories}");
+        Console.WriteLine($"{nameof(Day1)} - Answer 2 = {totalCalories}");
     }
 }
