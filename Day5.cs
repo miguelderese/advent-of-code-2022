@@ -21,7 +21,7 @@ public class Day5 : IDay
     {
         foreach (var input in inputFile)
         {
-            var regexMatch = Regex.Match(input, "^move ([0-9]{1,2}) from ([0-9]{1,2}) to ([0-9]{1,2})");
+            var regexMatch = Regex.Match(input, "^move ([0-9]{1,}) from ([0-9]{1,}) to ([0-9]{1,})");
 
             if (regexMatch.Success)
             {
