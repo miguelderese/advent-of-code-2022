@@ -9,12 +9,12 @@ public class Day1: IDay
 {
     public void Run()
     {
-        var inputFileDay1 = File.ReadAllLines("Input/day1.txt");
+        var inputFile = File.ReadAllLines("Input/day1.txt");
 
         var caloriesOfCurrentElf = 0;
         var calories = new List<int>();
 
-        foreach (var input in inputFileDay1)
+        foreach (var input in inputFile)
         {
             if (string.IsNullOrWhiteSpace(input))
             {

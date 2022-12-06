@@ -22,17 +22,17 @@ public class Day2 : IDay
 
     public void Run()
     {
-        var inputFileDay2 =
+        var inputFile =
             File.ReadAllLines("Input/day2.txt")
                 .ToList();
 
         var gameResult1 =
-            inputFileDay2
+            inputFile
                 .Select(CalculateGameResult1)
                 .Sum();
         
         var gameResult2 =
-            inputFileDay2
+            inputFile
                 .Select(CalculateGameResult2)
                 .Sum();
 

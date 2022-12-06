@@ -8,10 +8,10 @@ public class Day5 : IDay
 {
     public void Run()
     {
-        var inputFileDay4 = File.ReadAllLines("Input/day5.txt");
+        var inputFile = File.ReadAllLines("Input/day5.txt");
 
-        var answer1 = CalculateStockAfterMoves(BuildInitialStock(inputFileDay4), inputFileDay4, false);
-        var answer2 = CalculateStockAfterMoves(BuildInitialStock(inputFileDay4), inputFileDay4, true);
+        var answer1 = CalculateStockAfterMoves(BuildInitialStock(inputFile), inputFile, false);
+        var answer2 = CalculateStockAfterMoves(BuildInitialStock(inputFile), inputFile, true);
         
         Console.WriteLine($"{nameof(Day5)} - Answer 1 = {answer1}");
         Console.WriteLine($"{nameof(Day5)} - Answer 2 = {answer2}");

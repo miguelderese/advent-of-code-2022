@@ -16,7 +16,7 @@ public class Day4: IDay
     public void Run()
     {
         var numberString = "";
-        var inputFileDay4 = File.ReadAllLines("Input/day4.txt");
+        var inputFile = File.ReadAllLines("Input/day4.txt");
 
         for (int i = 0; i < 100; i++)
         {
@@ -25,7 +25,7 @@ public class Day4: IDay
         
         var pairs = new List<Pair>();
 
-        foreach (var line in inputFileDay4)
+        foreach (var line in inputFile)
         {
             var pair1 = line.Split(',')[0].Split('-');
             var pair2 = line.Split(',')[1].Split('-');

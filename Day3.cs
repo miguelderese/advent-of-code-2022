@@ -9,24 +9,24 @@ public class Day3: IDay
 {
     public void Run()
     {
-        var inputFileDay3 = File.ReadAllLines("Input/day3.txt");
+        var inputFile = File.ReadAllLines("Input/day3.txt");
         
         var number = 0;
         var number2 = 0;
         
-        foreach (var line in inputFileDay3)
+        foreach (var line in inputFile)
         {
             number += GetScoreForInput(line);
         }
 
-        foreach (var line in inputFileDay3)
+        foreach (var line in inputFile)
         {
             number += GetScoreForInput(line);
         }
      
-        for (int i = 0; i < inputFileDay3.Length / 3; i++)
+        for (int i = 0; i < inputFile.Length / 3; i++)
         {
-            number2 += GetScoreForInput2(inputFileDay3.Skip(i * 3).Take(3).ToArray());
+            number2 += GetScoreForInput2(inputFile.Skip(i * 3).Take(3).ToArray());
         }
         
         Console.WriteLine($"{nameof(Day4)} - Answer 1 = {number}");
