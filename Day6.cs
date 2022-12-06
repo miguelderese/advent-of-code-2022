@@ -7,12 +7,11 @@ public class Day6 : IDay
     public void Run()
     {
         var inputFile = File.ReadAllLines("Input/day6.txt")
-                                     .First();
+                                 .First();
 
         var answer1 = FindSecretInInput(inputFile, 4);
         var answer2 = FindSecretInInput(inputFile, 14);
-        
-        
+
         Console.WriteLine($"{nameof(Day6)} - Answer 1 = {answer1}");
         Console.WriteLine($"{nameof(Day6)} - Answer 2 = {answer2}");
     }
@@ -29,5 +28,4 @@ public class Day6 : IDay
 
         return 0;
     }
-
 }
