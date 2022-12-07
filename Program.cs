@@ -8,7 +8,8 @@ var daysToRun = new List<IDay>()
     new Day3(), 
     new Day4(), 
     new Day5(), 
-    new Day6()
+    new Day6(), 
+    new Day7()
 };
 
 daysToRun.ForEach(day => day.Run());
