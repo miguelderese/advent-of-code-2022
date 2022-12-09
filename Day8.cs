@@ -55,8 +55,8 @@ public class Day8 : IDay
         }
 
 
-        Console.WriteLine($"{nameof(Day7)} - Answer 1 = {answer1}");
-        Console.WriteLine($"{nameof(Day7)} - Answer 2 = {answer2}");
+        Console.WriteLine($"{nameof(Day8)} - Answer 1 = {answer1}");
+        Console.WriteLine($"{nameof(Day8)} - Answer 2 = {answer2}");
     }
 
     private bool IsThisTreeHidden(IReadOnlyList<int> currentSelection, int currentIndex)
